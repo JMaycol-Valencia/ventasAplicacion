@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PedidosFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pedidos"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Codigo Pedido" />
+
+            <EditText
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:text="Codigo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Codigo Producto" />
+
+            <EditText
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:text="Producto" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Nombre Cliente" />
+
+            <EditText
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:text="Nombre" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Celular" />
+
+            <EditText
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:text="Celular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Cantidad" />
+
+            <EditText
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:text="Cantidad" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Fecha Pedido" />
+
+            <EditText
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:text="Fecha Pedido" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Validacion" />
+
+            <EditText
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:text="Validacion" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Precio Total" />
+
+            <EditText
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:text="Precio Total" />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/bordes_redondos"
+            android:text="Guardar" />
+    </LinearLayout>
+</FrameLayout>
