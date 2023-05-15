@@ -38,7 +38,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Nombre" />
+                android:text="Nombre"
+                android:inputType="text"/>
         </LinearLayout>
 
         <LinearLayout
@@ -60,7 +61,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Producto" />
+                android:text="Producto"
+                android:inputType="text"/>
         </LinearLayout>
 
         <LinearLayout
@@ -82,7 +84,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Fecha" />
+                android:text="Fecha"
+                android:inputType="date"/>
         </LinearLayout>
 
         <LinearLayout
@@ -104,7 +107,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Cantidad" />
+                android:text="Cantidad"
+                android:inputType="number"/>
         </LinearLayout>
 
         <LinearLayout
@@ -126,7 +130,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Precio Total" />
+                android:text="Precio Total"
+                android:inputType="numberDecimal"/>
         </LinearLayout>
 
         <Button

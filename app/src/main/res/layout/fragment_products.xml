@@ -33,11 +33,13 @@
                 android:text="Codigo" />
 
             <EditText
+                android:id="@+id/Codigo"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
+                android:inputType="number"
                 android:text="Codigo" />
         </LinearLayout>
 
@@ -45,8 +47,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:orientation="horizontal"
-            android:layout_marginRight="20dp">
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="194dp"
@@ -55,11 +57,13 @@
                 android:text="Nombre" />
 
             <EditText
+                android:id="@+id/Nombre"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
+                android:inputType="text"
                 android:text="Nombre" />
         </LinearLayout>
 
@@ -67,8 +71,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:orientation="horizontal"
-            android:layout_marginRight="20dp">
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="194dp"
@@ -77,20 +81,22 @@
                 android:text="Precio" />
 
             <EditText
+                android:id="@+id/Precio"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
+                android:inputType="numberDecimal"
                 android:text="Precio" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="50dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="194dp"
@@ -99,19 +105,53 @@
                 android:text="Stock" />
 
             <EditText
+                android:id="@+id/Stock"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
+                android:inputType="number"
                 android:text="Stock" />
         </LinearLayout>
-        <Button
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:gravity="center"
             android:layout_marginTop="70dp"
-            android:background="@drawable/bordes_redondos"
-            android:text="Guardar" />
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes_redondos"
+                android:onClick="GuardarDatos"
+                android:text="Guardar" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes_redondos"
+                android:onClick="ListarDatos"
+                android:text="Listar" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes_redondos"
+                android:text="Insertar" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes_redondos"
+                android:text="Actualizar" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes_redondos"
+                android:text="Borrar" />
+        </LinearLayout>
     </LinearLayout>
 </FrameLayout>
