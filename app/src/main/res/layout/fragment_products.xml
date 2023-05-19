@@ -121,18 +121,21 @@
             android:gravity="center"
             android:layout_marginTop="70dp"
             android:orientation="horizontal">
+
             <Button
+                android:id="@+id/GuardarBt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes_redondos"
-                android:onClick="GuardarDatos"
+                android:onClick="guardarDatos"
                 android:text="Guardar" />
 
             <Button
+                android:id="@+id/ListarBt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes_redondos"
-                android:onClick="ListarDatos"
+                android:onClick="listarDatos"
                 android:text="Listar" />
 
             <Button
@@ -142,16 +145,27 @@
                 android:text="Insertar" />
 
             <Button
+                android:id="@+id/ActualizarBt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes_redondos"
+                android:onClick="actualizarDatos"
                 android:text="Actualizar" />
 
             <Button
+                android:id="@+id/BorrarBt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordes_redondos"
+                android:onClick="borrarDatos"
                 android:text="Borrar" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/Mensaje"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="" />
     </LinearLayout>
 </FrameLayout>

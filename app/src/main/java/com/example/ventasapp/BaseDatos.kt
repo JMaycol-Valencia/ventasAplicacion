@@ -6,12 +6,13 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-var BD = "baseDatos"
+var BD = "baseDatos1"
 
 class BaseDatos (contexto: Context): SQLiteOpenHelper(contexto,BD,null,1){
 
+
     override fun onCreate(db: SQLiteDatabase?) {
-        var sql="CREATE TABLE Producto(id INTEGER PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(25), precio INTEGER, stock INTEGER)"
+        var sql="CREATE TABLE Producto(codigo INTEGER PRIMARY KEY , nombre VARCHAR(25), precio INTEGER, stock INTEGER)"
         db?.execSQL(sql)
     }
 
