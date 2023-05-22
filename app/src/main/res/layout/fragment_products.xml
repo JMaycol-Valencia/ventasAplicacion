@@ -126,6 +126,7 @@
                 android:id="@+id/GuardarBt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:background="@drawable/bordes_redondos"
                 android:onClick="guardarDatos"
                 android:text="Guardar" />
@@ -134,6 +135,7 @@
                 android:id="@+id/ListarBt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:background="@drawable/bordes_redondos"
                 android:onClick="listarDatos"
                 android:text="Listar" />
@@ -143,6 +145,7 @@
                 android:id="@+id/ActualizarBt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:background="@drawable/bordes_redondos"
                 android:onClick="actualizarDatos"
                 android:text="Actualizar" />
@@ -151,6 +154,7 @@
                 android:id="@+id/BorrarBt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:background="@drawable/bordes_redondos"
                 android:onClick="borrarDatos"
                 android:text="Borrar" />

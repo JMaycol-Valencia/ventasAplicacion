@@ -213,13 +213,56 @@
                 android:inputType="numberDecimal"
                 android:text="Precio Total" />
         </LinearLayout>
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/bordes_redondos"
-            android:text="Guardar" />
+            android:gravity="center"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/GuardarBt"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes_redondos"
+                android:onClick="guardarDatos"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/ListarBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/bordes_redondos"
+                android:onClick="listarDatos"
+                android:text="Listar" />
+
+
+            <Button
+                android:id="@+id/ActualizarBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/bordes_redondos"
+                android:onClick="actualizarDatos"
+                android:text="Actualizar" />
+
+            <Button
+                android:id="@+id/BorrarBt"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes_redondos"
+                android:onClick="borrarDatos"
+                android:text="Borrar" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/Mensaje"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="" />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
