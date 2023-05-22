@@ -4,6 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PedidosFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,13 +36,14 @@
                 android:text="Codigo Pedido" />
 
             <EditText
+                android:id="@+id/Codigo"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Codigo"
-                android:inputType="number"/>
+                android:inputType="number"
+                android:text="Codigo" />
         </LinearLayout>
 
         <LinearLayout
@@ -56,13 +60,14 @@
                 android:text="Codigo Producto" />
 
             <EditText
+                android:id="@+id/Producto"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Producto"
-                android:inputType="number"/>
+                android:inputType="number"
+                android:text="Producto" />
         </LinearLayout>
 
         <LinearLayout
@@ -79,13 +84,14 @@
                 android:text="Nombre Cliente" />
 
             <EditText
+                android:id="@+id/Nombre"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Nombre"
-                android:inputType="text"/>
+                android:inputType="text"
+                android:text="Nombre" />
         </LinearLayout>
 
         <LinearLayout
@@ -102,13 +108,14 @@
                 android:text="Celular" />
 
             <EditText
+                android:id="@+id/Celular"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Celular"
-                android:inputType="number"/>
+                android:inputType="number"
+                android:text="Celular" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,13 +132,14 @@
                 android:text="Cantidad" />
 
             <EditText
+                android:id="@+id/Cantidad"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Cantidad"
-                android:inputType="number"/>
+                android:inputType="number"
+                android:text="Cantidad" />
         </LinearLayout>
 
         <LinearLayout
@@ -148,13 +156,14 @@
                 android:text="Fecha Pedido" />
 
             <EditText
+                android:id="@+id/DatePedi"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Fecha Pedido"
-                android:inputType="date"/>
+                android:inputType="date"
+                android:text="Fecha Pedido" />
         </LinearLayout>
 
         <LinearLayout
@@ -171,13 +180,14 @@
                 android:text="Validacion" />
 
             <EditText
+                android:id="@+id/Validacion"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Validacion"
-                android:inputType="text"/>
+                android:inputType="text"
+                android:text="Validacion" />
         </LinearLayout>
 
         <LinearLayout
@@ -194,13 +204,14 @@
                 android:text="Precio Total" />
 
             <EditText
+                android:id="@+id/Total"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:text="Precio Total"
-                android:inputType="numberDecimal"/>
+                android:inputType="numberDecimal"
+                android:text="Precio Total" />
         </LinearLayout>
         <Button
             android:layout_width="wrap_content"
@@ -209,5 +220,6 @@
             android:layout_marginTop="35dp"
             android:background="@drawable/bordes_redondos"
             android:text="Guardar" />
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

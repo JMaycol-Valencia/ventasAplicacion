@@ -14,6 +14,7 @@ class BaseDatos (contexto: Context): SQLiteOpenHelper(contexto,BD,null,1){
     override fun onCreate(db: SQLiteDatabase?) {
         var sql="CREATE TABLE Producto(codigo INTEGER PRIMARY KEY , nombre VARCHAR(25), precio INTEGER, stock INTEGER)"
         db?.execSQL(sql)
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {

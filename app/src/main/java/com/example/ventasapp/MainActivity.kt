@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         mensaje = findViewById(R.id.Mensaje)*/
 
         val adapter = ViewPagerAdapter(supportFragmentManager)
+        adapter.addFragment(HomeFragment(), "Home")
         adapter.addFragment(ProductsFragment(), "Productos")
         adapter.addFragment(PedidosFragment(), "Pedidos")
         adapter.addFragment(ConsultaFragment(), "Consultas")

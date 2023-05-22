@@ -12,6 +12,11 @@
         <entry key="..\:/Users/Maycol/StudioProjects/ventasapp/app/src/main/res/layout/fragment_pedidos.xml" value="0.371875" />
         <entry key="..\:/Users/Maycol/StudioProjects/ventasapp/app/src/main/res/layout/fragment_products.xml" value="0.22" />
         <entry key="..\:/Users/Maycol/StudioProjects/ventasapp/app/src/main/res/layout/fragment_second.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/fragment_consulta.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_pedidos.xml" value="0.31685791015625003" />
+        <entry key="app/src/main/res/layout/fragment_products.xml" value="0.1" />
       </map>
     </option>
   </component>

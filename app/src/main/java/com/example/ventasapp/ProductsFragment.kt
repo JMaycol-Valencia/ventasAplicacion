@@ -1,5 +1,6 @@
 package com.example.ventasapp
 
+import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +61,7 @@ class ProductsFragment : Fragment() {
         val guardarButton = view.findViewById<Button>(R.id.GuardarBt)
         guardarButton.setOnClickListener {
             guardarDatos(view)
+
         }
 
         val listarButton = view.findViewById<Button>(R.id.ListarBt)
@@ -91,6 +94,7 @@ class ProductsFragment : Fragment() {
             product.stock = stock.text.toString().toInt()
             db.insertarDatos(product)
         }
+        Toast.makeText(requireContext(), "Guardado Exitoso", Toast.LENGTH_LONG).show()
     }
 
 
@@ -134,6 +138,7 @@ class ProductsFragment : Fragment() {
         if (codigo.text.toString().isNotEmpty()) {
             db.borrarDatos(codigo.text.toString())
         }
+        Toast.makeText(requireContext(), "Se Borro el Producto", Toast.LENGTH_LONG).show()
     }
 
     private fun actualizarDatos(view:View) {
@@ -146,6 +151,7 @@ class ProductsFragment : Fragment() {
                 stock.text.toString().toInt()
             )
         }
+        Toast.makeText(requireContext(), "Se actualizo el Producto", Toast.LENGTH_LONG).show()
     }
 
 

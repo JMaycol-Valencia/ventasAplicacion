@@ -138,11 +138,6 @@
                 android:onClick="listarDatos"
                 android:text="Listar" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bordes_redondos"
-                android:text="Insertar" />
 
             <Button
                 android:id="@+id/ActualizarBt"
@@ -168,4 +163,5 @@
             android:gravity="center"
             android:text="" />
     </LinearLayout>
+
 </FrameLayout>
